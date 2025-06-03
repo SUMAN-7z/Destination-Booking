@@ -1,93 +1,71 @@
 <% layout("/layouts/boilerplate") %>
-<div id="filters">
-  <div class="filter">
-    <div>
-      <i class="fa-solid fa-fire"></i>
-    </div>
-    <p>Trending</p>
-  </div>
 
-  <div class="filter">
-    <div>
-      <i class="fa-solid fa-bed"></i>
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-lg-8">
+      <div id="filters" class="d-flex overflow-auto gap-3 py-2 px-3 rounded">
+        <div class="filter">
+          <i class="fa-solid fa-fire"></i>
+          <p>Trending</p>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-bed"></i>
+          <p>Rooms</p>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-mountain-city"></i>
+          <p>Iconic Cities</p>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-mountain-sun"></i>
+          <p>Mountains</p>
+        </div>
+        <div class="filter">
+          <i class="fa-brands fa-fort-awesome"></i>
+          <p>Castles</p>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-person-swimming"></i>
+          <p>Pools</p>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-tents"></i>
+          <p>Camping</p>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-cow"></i>
+          <p>Farms</p>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-snowman"></i>
+          <p>Arctic</p>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-igloo"></i>
+          <p>Domes</p>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-sailboat"></i>
+          <p>Boats</p>
+        </div>
+      </div>
     </div>
-    <p>Rooms</p>
-  </div>
 
-  <div class="filter">
-    <div>
-      <i class="fa-solid fa-mountain-city"></i>
-    </div>
-    <p>Iconic Cities</p>
-  </div>
-
-  <div class="filter">
-    <div>
-      <i class="fa-solid fa-mountain-sun"></i>
-    </div>
-    <p>Mountains</p>
-  </div>
-
-  <div class="filter">
-    <div>
-      <i class="fa-brands fa-fort-awesome"></i>
-    </div>
-    <p>Castles</p>
-  </div>
-
-  <div class="filter">
-    <div>
-      <i class="fa-solid fa-person-swimming"></i>
-    </div>
-    <p>Amazing Pools</p>
-  </div>
-
-  <div class="filter">
-    <div>
-      <i class="fa-solid fa-tents"></i>
-    </div>
-    <p>Camping</p>
-  </div>
-
-  <div class="filter">
-    <div>
-      <i class="fa-solid fa-cow"></i>
-    </div>
-    <p>farms</p>
-  </div>
-
-  <div class="filter">
-    <div>
-      <i class="fa-solid fa-snowman"></i>
-    </div>
-    <p>Arctic</p>
-  </div>
-
-  <div class="filter">
-    <div>
-      <i class="fa-solid fa-igloo"></i>
-    </div>
-    <p>Domes</p>
-  </div>
-
-  <div class="filter">
-    <div>
-      <i class="fa-solid fa-sailboat"></i>
-    </div>
-    <p>Boats</p>
-  </div>
-
-  <div class="tax_toggle">
-    <div class="form-check-reverse form-switch">
-      <input
-        class="form-check-input"
-        type="checkbox"
-        role="switch"
-        id="switchCheckDefault"
-      />
-      <label class="form-check-label" for="switchCheckDefault"
-        >Display total after taxes</label
+    <div class="col-lg-4">
+      <div
+        class="tax_toggle p-3 d-flex align-items-center justify-content-center mt-4"
       >
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="switchCheckDefault"
+          />
+          <label class="form-check-label ms-2" for="switchCheckDefault">
+            Display total after taxes
+          </label>
+        </div>
+      </div>
     </div>
   </div>
 </div>
