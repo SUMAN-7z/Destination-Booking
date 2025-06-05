@@ -102,19 +102,33 @@ body {
 .show-img {
   height: 55vh;
 }
+
 .btns {
   display: flex;
+  flex-direction: column; /* Always stacked */
+  gap: 10px; /* Space between buttons */
+  width: 100%;
 }
+
+.show-btn {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+/* No margin-left needed because we’re stacking */
+.btn-danger {
+  margin-left: 0;
+}
+
 .show-card {
   padding-left: 0;
   padding-right: 0;
 }
-.btn-danger {
-  margin-left: 10px;
-}
-.show-btn {
-  padding: 6px 107px !important;
-}
+
 /* map */
 #map {
   height: 400px;
