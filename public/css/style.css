@@ -100,7 +100,7 @@ body {
 }
 /* show page */
 .show-img {
-  height: 35vh;
+  height: 55vh;
 }
 .btns {
   display: flex;
@@ -108,6 +108,12 @@ body {
 .show-card {
   padding-left: 0;
   padding-right: 0;
+}
+.btn-danger {
+  margin-left: 10px;
+}
+.show-btn {
+  padding: 6px 107px !important;
 }
 /* map */
 #map {

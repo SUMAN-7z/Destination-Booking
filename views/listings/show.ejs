@@ -1,10 +1,10 @@
 <style></style>
 <% layout("/layouts/boilerplate") %>
 <div class="row mt-3">
-  <div class="col-6 offset-3">
-    <h3>🛞<%=listing.title%></h3>
+  <div class="">
+    <h3><%=listing.title%></h3>
   </div>
-  <div class="card col-6 offset-3 show-card listing-card">
+  <div class="card show-card listing-card">
     <img
       src="<%=listing.image.url%>"
       class="card-img-top show-img"
@@ -27,18 +27,18 @@
   <div class="btns mb-3">
     <a
       href="/listings/<%= listing._id %>/edit"
-      class="btn btn-success col-2 offset-3"
+      class="btn btn-success show-btn"
     >
       Edit
     </a>
 
     <form method="post" action="/listings/<%=listing._id%>?_method=DELETE">
-      <button class="btn btn-danger offset-5">Delete</button>
+      <button class="btn btn-danger show-btn">Delete</button>
     </form>
   </div>
   <% } %>
 
-  <div class="col-6 offset-3 mb-3">
+  <div class="mb-3">
     <% if(currUser){%>
     <hr />
     <h4>Leave a Review</h4>
@@ -156,7 +156,7 @@
     <% } %>
   </div>
   <!-- Map Image -->
-  <div class="col-6 offset-3 mb-3 map-outside">
+  <div class="mb-3 map-outside">
     <h2>Where you'll be 🌍</h2>
     <div id="map"></div>
     <script>
